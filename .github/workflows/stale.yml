@@ -2,11 +2,12 @@ name: Do something, anything
 
 on:
   schedule:
-  - cron: "1 * * * *"
+  - cron: "0/5 * * * *"
 
 jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
     - name: 'Create file'
-      run: date >> testfile.txt
+      run:  |
+        date >> testfile.txt
