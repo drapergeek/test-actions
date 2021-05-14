@@ -1,8 +1,8 @@
-name: Mark stale issues and pull requests
+name: Do something, anything
 
 on:
   schedule:
-  - cron: "46 18 * * *"
+  - cron: "1 * * * *"
 
 jobs:
   stale:
